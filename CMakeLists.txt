@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.11) # FetchContent is available in 3.11+
 project(rocket_science2)
 
+set(OpenGL_GL_PREFERENCE GLVND)
+
 # raylib
 find_package(raylib QUIET)
 if (NOT raylib_FOUND)
